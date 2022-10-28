@@ -1,4 +1,36 @@
 body{
     font-family: 'Raleway', sans-serif;
-        font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: var(--main-text-color);
+}
+:root { --main-text-colo: #212121;
+--secondary-text-color: #757575;
+--accent: #2196F3;
+--white: #ffffff; }
+
+
+/* ------------------------header styles------------------------------ */
+.logo{
+color: #000000;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+}
+
+.web{
+  color: var(--accent);
+}
+.link{
+    text-decoration: none;
+}
+.header-nav {
+}
+.nav-link {
+}
+.header-contacts {
+}
+.header-mail {
+}
+.header-tel {
 }

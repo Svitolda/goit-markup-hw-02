@@ -4,15 +4,24 @@ body{
     background-color: #ffffff;
     color: var(--main-text-color);
 }
-:root { --main-text-colo: #212121;
+:root { --main-text-color: #212121;
 --secondary-text-color: #757575;
 --accent: #2196F3;
---white: #ffffff; }
+--white: #ffffff; 
+--black: #000000;
+--team-section-color:#F5F4FA;
+--section-color: #2F303A;
+}
 
-
+/* studio styles */
 /* ------------------------header styles------------------------------ */
-.logo{
-color: #000000;
+
+.header{
+background: var(--white);
+}
+
+.logo-link{
+color: var(--black);
 font-weight: 700;
 font-size: 26px;
 line-height: calc(31/26);
@@ -24,22 +33,26 @@ letter-spacing: 0.03em;
 }
 
 .link{
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.header-nav {
+.ul{ 
+  list-style: none;
+}
+
+.header-nav, .header-contacts {
   width: 1600px;
   height: 80px;
   left: 0px;
   top: 0px;
 }
+
 .nav-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #212121;
-
+  color: var(--main-text-colo);
 }
 
 .header-mail, .header-tel {
@@ -53,15 +66,17 @@ letter-spacing: 0.03em;
 .nav-link:hover,
 .nav-link:focus, 
 .header-mail:hover, 
-.header-mail:focus{
+.header-mail:focus, 
+.header-tel:hover, 
+.header-tel:focus {
   color: var(--accent);
 }
 
-/* ------------------------titale styles------------------------------ */
+/* ------------------------section styles------------------------------ */
 
 .section {
  width: 1600px;
-background: #2F303A;
+background: var(--section-color);
 }
 
 .section-title {
@@ -70,8 +85,7 @@ background: #2F303A;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white);
-  
+  color: var(--white);  
 }
 
 .section-btn {
@@ -84,7 +98,92 @@ background: #2F303A;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--white);
-  cursor:pointer;
+  cursor: pointer;
 }
 
-/* ------------------------header styles------------------------------ */
+/* ------------------------about styles------------------------------ */
+
+.about-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16/14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+.about-sutitle {
+  font-size: 14px;
+  line-height: calc(24/14);
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+/* ------------------------aside styles------------------------------ */
+
+.aside-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42/36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+/* ------------------------team styles------------------------------ */
+
+.team {
+  background: var(--team-section-color);
+}
+
+.team-item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19/16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.team-item-sutitle {
+  font-size: 16px;
+  line-height: calc(19/16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+
+/* ------------------------footer styles------------------------------ */
+
+.footer {
+  background: #2F303A;
+}
+.logo-footer-link{
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31/16);
+  letter-spacing: 0.03em;
+  color: var(--white);
+} 
+.address-link{
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--white);
+}
+
+.contact-link {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+
+.address-link:hover, 
+.address-link:focus,
+.contact-link:hover,
+.contact-link:focus{
+  color: var(--accent);
+}

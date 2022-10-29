@@ -15,22 +15,76 @@ body{
 color: #000000;
 font-weight: 700;
 font-size: 26px;
-line-height: 31px;
+line-height: calc(31/26);
+letter-spacing: 0.03em;
 }
 
 .web{
   color: var(--accent);
 }
+
 .link{
     text-decoration: none;
 }
+
 .header-nav {
+  width: 1600px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
 }
 .nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+
 }
-.header-contacts {
+
+.header-mail, .header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
 }
-.header-mail {
+
+.nav-link:hover,
+.nav-link:focus, 
+.header-mail:hover, 
+.header-mail:focus{
+  color: var(--accent);
 }
-.header-tel {
+
+/* ------------------------titale styles------------------------------ */
+
+.section {
+ width: 1600px;
+background: #2F303A;
 }
+
+.section-title {
+  font-size: 44px;
+  line-height: calc(60/44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+  
+}
+
+.section-btn {
+  font-family: inherit;
+  width: 216px;
+  height: 50px;
+  left: 692px;
+  top: 430px;
+  background: var(--accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--white);
+  cursor:pointer;
+}
+
+/* ------------------------header styles------------------------------ */

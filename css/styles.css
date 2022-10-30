@@ -11,6 +11,8 @@ body{
 --black: #000000;
 --team-section-color:#F5F4FA;
 --section-color: #2F303A;
+--btn-color: #F5F4FA;
+--footer-background-color:#2F303A;
 }
 
 /* studio styles */
@@ -34,6 +36,29 @@ letter-spacing: 0.03em;
 
 .link{
   text-decoration: none;
+}
+
+.current{
+  color: var(--accent);
+}
+
+.btn{
+  cursor: pointer;
+  font-family: inherit;
+} 
+
+.btn-portfolio{
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26/16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  background: var(--btn-color);
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .ul{ 
@@ -76,7 +101,7 @@ letter-spacing: 0.03em;
 
 .section {
  width: 1600px;
-background: var(--section-color);
+  background: var(--section-color);
 }
 
 .section-title {
@@ -89,18 +114,20 @@ background: var(--section-color);
 }
 
 .section-btn {
-  font-family: inherit;
   width: 216px;
   height: 50px;
   left: 692px;
   top: 430px;
-  background: var(--accent);
+  background: var(--btn-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: var(--white);
-  cursor: pointer;
+  color: var(--main-text-color);
 }
-
+.section-btn:hover,
+.section-btn:focus{
+  background: var(--accent);
+  color: var(--btn-color);
+}
 /* ------------------------about styles------------------------------ */
 
 .about-title {
@@ -156,7 +183,7 @@ background: var(--section-color);
 /* ------------------------footer styles------------------------------ */
 
 .footer {
-  background: #2F303A;
+  background: var(--footer-background-color);
 }
 .logo-footer-link{
   font-weight: 700;
@@ -186,4 +213,94 @@ background: var(--section-color);
 .contact-link:hover,
 .contact-link:focus{
   color: var(--accent);
+}
+
+/* profile styles */
+/* ------------------------ styles------------------------------ */
+
+.profile-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.profile-btn-all {
+  width: 73px;
+  height: 38px;
+  left: 512px;
+  top: 174px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.profile-btn-site {
+  width: 125px;
+  height: 38px;
+  left: 593px;
+  top: 174px;
+}
+.profile-btn-add {
+  width: 112px;
+  height: 38px;
+  left: 726px;
+  top: 174px;
+}
+.profile-btn-desine {
+  width: 103px;
+  height: 38px;
+  left: 846px;
+  top: 201px;
+}
+.profile-btn-markt {
+  width: 130px;
+  height: 38px;
+  left: 957px;
+  top: 201px;
+}
+
+.profile-btn-all:hover,
+.profile-btn-all:focus,
+.profile-btn-site:hover,
+.profile-btn-site:focus,
+.profile-btn-add:hover,
+.profile-btn-add:focus,
+.profile-btn-desine:hover,
+.profile-btn-desine:focus,
+.profile-btn-markt:hover,
+.profile-btn-markt:focus{
+  background: var(--accent);
+  color: var(--btn-color);
+}
+
+
+/* ------------------------content styles------------------------------ */
+
+.content-title {
+  width: 322px;
+  height: 36px;
+  left: 239px;
+  top: 603px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36/18);
+  letter-spacing: 0.06em;
+  color: var(--main-text-color);
+}
+
+.content-subtitle{
+  width: 322px;
+  height: 30px;
+  left: 239px;
+  top: 643px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30/16);
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }

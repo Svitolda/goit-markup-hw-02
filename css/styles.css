@@ -23,8 +23,8 @@ background: var(--white);
 }
 
 .logo-link{
+font-family: Raleway;
 color: var(--black);
-font-weight: 700;
 font-size: 26px;
 line-height: calc(31/26);
 letter-spacing: 0.03em;
@@ -47,19 +47,6 @@ letter-spacing: 0.03em;
   font-family: inherit;
 } 
 
-.btn-portfolio{
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(26/16);
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
-  background: var(--btn-color);
-  border-radius: 4px;
-  cursor: pointer;
-}
 
 .ul{ 
   list-style: none;
@@ -75,7 +62,7 @@ letter-spacing: 0.03em;
 .nav-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16/14);
   letter-spacing: 0.02em;
   color: var(--main-text-colo);
 }
@@ -83,7 +70,7 @@ letter-spacing: 0.03em;
 .header-mail, .header-tel {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1calc(16/14);
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
@@ -105,6 +92,7 @@ letter-spacing: 0.03em;
 }
 
 .section-title {
+  font-weight: 900;
   font-size: 44px;
   line-height: calc(60/44);
   text-align: center;
@@ -131,7 +119,6 @@ letter-spacing: 0.03em;
 /* ------------------------about styles------------------------------ */
 
 .about-title {
-  font-weight: 700;
   font-size: 14px;
   line-height: calc(16/14);
   letter-spacing: 0.03em;
@@ -148,7 +135,6 @@ letter-spacing: 0.03em;
 /* ------------------------aside styles------------------------------ */
 
 .aside-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: calc(42/36);
   text-align: center;
@@ -186,7 +172,7 @@ letter-spacing: 0.03em;
   background: var(--footer-background-color);
 }
 .logo-footer-link{
-  font-weight: 700;
+  font-family: Raleway;
   font-size: 26px;
   line-height: calc(31/16);
   letter-spacing: 0.03em;
@@ -195,14 +181,14 @@ letter-spacing: 0.03em;
 .address-link{
   font-style: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: calc(24/14);
   letter-spacing: 0.03em;
   color: var(--white);
 }
 
 .contact-link {
   font-size: 14px;
-  line-height: 24px;
+  line-height: calc(24/14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
@@ -218,60 +204,22 @@ letter-spacing: 0.03em;
 /* profile styles */
 /* ------------------------ styles------------------------------ */
 
-.profile-title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
+.btn-portfolio {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26/16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  background: var(--btn-color);
+  border-radius: 4px;
+  cursor: pointer;}
 
-.profile-btn-all {
-  width: 73px;
-  height: 38px;
-  left: 512px;
-  top: 174px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 
-.profile-btn-site {
-  width: 125px;
-  height: 38px;
-  left: 593px;
-  top: 174px;
-}
-.profile-btn-add {
-  width: 112px;
-  height: 38px;
-  left: 726px;
-  top: 174px;
-}
-.profile-btn-desine {
-  width: 103px;
-  height: 38px;
-  left: 846px;
-  top: 201px;
-}
-.profile-btn-markt {
-  width: 130px;
-  height: 38px;
-  left: 957px;
-  top: 201px;
-}
-
-.profile-btn-all:hover,
-.profile-btn-all:focus,
-.profile-btn-site:hover,
-.profile-btn-site:focus,
-.profile-btn-add:hover,
-.profile-btn-add:focus,
-.profile-btn-desine:hover,
-.profile-btn-desine:focus,
-.profile-btn-markt:hover,
-.profile-btn-markt:focus{
+.btn-portfolio:hover,
+.btn-portfolio:focus{
   background: var(--accent);
   color: var(--btn-color);
 }
@@ -285,7 +233,6 @@ letter-spacing: 0.03em;
   left: 239px;
   top: 603px;
   font-style: normal;
-  font-weight: 700;
   font-size: 18px;
   line-height: calc(36/18);
   letter-spacing: 0.06em;
@@ -298,7 +245,6 @@ letter-spacing: 0.03em;
   left: 239px;
   top: 643px;
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(30/16);
   letter-spacing: 0.03em;
